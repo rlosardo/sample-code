@@ -2,11 +2,17 @@ package com.richlosardo;
 
 public class MusicCollection {
 
+	private Integer id;
+	
 	private int cdCount;
 	private int mp3Count;
 	private int recordCount;
 	
 	public MusicCollection() {
+	}
+	
+	public MusicCollection(Integer id) {
+		this.id = id;
 	}
 	
 	public void addToMusicCollection(int addCdCount, int addMp3Count, int addRecordCount) {
@@ -34,6 +40,14 @@ public class MusicCollection {
 		System.out.println("cdCount = " + cdCount);
 		System.out.println("mp3Count = " + mp3Count);
 		System.out.println("recordCount = " + recordCount);
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 	
 }
